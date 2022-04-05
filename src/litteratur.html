@@ -280,17 +280,78 @@
     <!-- Content -->
     <div class="2xl:container 2xl:mx-auto">
         <div class="lg:px-20 md:px-6 px-4 md:py-12 py-8">
-            <div class="max-w-sm mx-auto">
+            <div class="max-w-xs md:max-w-md lg:max-w-md mx-auto">
                 <h1 class="text-3xl lg:text-4xl font-semibold text-gray-800  text-center ">
-                    Litteratur</h1>
+                    Litteratur
+                </h1>
                 <p class="text-center pt-8">
                     Her finder du vores udvalg af spændende og lærerig fotolitteratur spækket med flotte billeder.
                 </p>
-                <!-- <p class="text-base leading-normal sm:leading-4 text-center pt-8">Kategorier: <a href="kategori.html"
-                        class="underline">Naturen</a> / <a href="kategori.html" class="underline">Byen</a>
-                    / <a href="kategori.html" class="underline">Sort/hvid</a> / <a href="kategori.html"
-                        class="underline">Minimalisme</a></p> -->
             </div>
+
+                <!-- FILTRERING -->
+                <!--
+                This component uses @tailwindcss/forms
+
+                yarn add @tailwindcss/forms
+                npm install @tailwindcss/forms
+
+                plugins: [require('@tailwindcss/forms')]
+                -->
+
+                <form
+                class=" max-w-3xl mx-auto overscroll-x-none mt-8 divide-y "
+                role="dialog"
+                aria-label="Filters"
+                >
+                    <main class="p-3">
+                        <div class="-my-8 divide-y">
+                            <div class="py-8">
+                                <fieldset>
+                                    <legend class="text-xl text-center mb-3 font-medium">Kategorier</legend>
+
+                                        <ul class="flex items-center mt-6 justify-between">
+                                            <li>
+                                                <label class="flex items-center text-sm">
+                                                    <input type="checkbox" class="w-6 h-6 border border-gray-200 rounded-md" />
+                                                    <span class="ml-3 font-medium">Fotokundskab</span>
+                                                </label>
+                                            </li>
+
+                                            <li>
+                                                <label class="flex items-center text-sm">
+                                                    <input type="checkbox" class="w-6 h-6 border border-gray-200 rounded-md" />
+                                                    <span class="ml-3 font-medium">Rejser</span>
+                                                </label>
+                                            </li>
+
+                                            <li>
+                                                <label class="flex items-center text-sm">
+                                                    <input type="checkbox" class="w-6 h-6 border border-gray-200 rounded-md" />
+                                                    <span class="ml-3 font-medium">Selvhjælp</span>
+                                                </label>
+                                            </li>
+
+                                            <li>
+                                                <label class="flex items-center text-sm">
+                                                    <input type="checkbox" class="w-6 h-6 border border-gray-200 rounded-md" />
+                                                    <span class="ml-3 font-medium">Mest populære</span>
+                                                </label>
+                                            </li>
+                                        </ul>
+                                </fieldset>
+                            </div>
+                        </div>
+                    </main>
+
+                    <div class="flex items-center justify-between p-6">
+                        <button class="text-sm font-medium text-gray-600 underline" type="button">Fjern alle</button>
+                        <button class="px-2.5 py-1.5 font-medium text-white bg-black rounded-lg" type="submit">Vis resultater</button>
+                    </div>
+                </form>   
+        
+
+            <!-- BOOKS -->
             <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 2xl:grid-cols-4 gap-6 lg:gap-8 mt-8 md:mt-10">
 
                 <div class="bg-gray-50  p-8">
