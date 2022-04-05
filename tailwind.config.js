@@ -3,7 +3,7 @@ module.exports = {
   theme: {
     extend: {
       backgroundImage: {
-        'hero': "url('src/content/lunefuld-lykke-header.jpg')",
+        'hero': "url('content/lunefuld-lykke-header.jpg')",
       }
     },
   },
