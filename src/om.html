@@ -17,228 +17,206 @@
     Navigation
     Content
     Footer
-  -->
+    -->
 
-    <!-- Navigation -->
-  <div class="">
-    <div>
-      <div class="relative">
-        <!-- For md screen size -->
-        <div id="md-searchbar" class="bg-white  hidden lg:hidden py-5 px-6 items-center justify-between">
-          <div class="flex items-center space-x-3 text-gray-800 ">
-            <div>
-              <img class="" src="https://tuk-cdn.s3.amazonaws.com/can-uploader/navigation-I-svg2.svg" alt="search">
-              <img class="hidden" src="https://tuk-cdn.s3.amazonaws.com/can-uploader/navigation-I-svg2dark.svg"
-                alt="search">
-            </div>
-            <input type="text" placeholder="Søg efter"
-              class="text-sm leading-none text-gray-600 focus:outline-none" />
-          </div>
-          <div class="space-x-6">
-            <button aria-label="view favourites"
-              class="text-gray-800  focus:outline-none focus:ring-2 focus:ring-gray-800">
-              <img class="w-5" src="https://tuk-cdn.s3.amazonaws.com/can-uploader/navigation-I-svg3.svg"
-                alt="favourites">
-              <img class="w-5 hidden" src="https://tuk-cdn.s3.amazonaws.com/can-uploader/navigation-I-svg3dark.svg"
-                alt="favourites">
-            </button>
-            <button aria-label="go to cart" class="text-gray-800  focus:outline-none focus:ring-2 focus:ring-gray-800">
-              <img class="w-5" src="https://tuk-cdn.s3.amazonaws.com/can-uploader/navigation-I-svg4.svg" alt="bag">
-              <img class="w-5 hidden" src="https://tuk-cdn.s3.amazonaws.com/can-uploader/navigation-I-svg4dark.svg"
-                alt="bag">
-            </button>
-          </div>
-        </div>
-        <!-- For md screen size -->
-
-        <!-- For large screens -->
-        <div class=" bg-gray-50 px-6 py-9">
-          <div class="container mx-auto flex items-center justify-between">
-            <h1 class="md:w-2/12 cursor-pointer text-gray-800 " aria-label="lunefuldlykke.dk">
-              <a href="index.html" class="font-extrabold">
-                <img class="min-h-[50px]" src="content/lunefuld-lykke.svg" alt="logo">
-              </a>
-            </h1>
-            <ul class="hidden w-8/12 md:flex items-center font-medium justify-center space-x-8">
-              <li>
-                <a href="plakater.html"
-                  class=" text-base text-gray-800 focus:outline-none focus:ring-2 focus:ring-gray-800 hover:underline">Shop plakater</a>
-              </li>
-              <li>
-                <a href="litteratur.html"
-                  class=" text-base text-gray-800 focus:outline-none focus:ring-2 focus:ring-gray-800 hover:underline">Shop litteratur</a>
-              </li>
-              <li>
-                <a href="inspiration.html"
-                  class=" text-base text-gray-800 focus:outline-none focus:ring-2 focus:ring-gray-800 hover:underline">Inspiration</a>
-              </li>
-              <li>
-                <a href="om.html"
-                  class=" text-base text-gray-800 focus:outline-none focus:ring-2 focus:ring-gray-800 hover:underline">Om
-                  os</a>
-              </li>
-            </ul>
-
-            <div class="md:w-2/12 justify-end flex items-center space-x-4 xl:space-x-8">
-              <div class="hidden lg:flex items-center">
-                <button onclick="toggleSearch()" aria-label="search items"
-                  class="w-5 text-gray-800 focus:outline-none focus:ring-2 focus:ring-gray-800">
-                  <img class="transform rotate-90 "
-                    src="https://tuk-cdn.s3.amazonaws.com/can-uploader/navigation-I-svg2.svg" alt="search">
-                  <img class="transform rotate-90  hidden"
-                    src="https://tuk-cdn.s3.amazonaws.com/can-uploader/navigation-I-svg2dark.svg" alt="search">
-                </button>
-                <input id="searchInput" type="text" placeholder="Søg"
-                  class="hidden text-sm   text-gray-600 rounded ml-1 border border-transparent focus:outline-none focus:border-gray-400 px-1" />
-              </div>
-              <div class="hidden lg:flex items-center space-x-4 xl:space-x-8">
-                <button aria-label="view favourites"
-                  class="w-6 text-gray-800 focus:outline-none focus:ring-2 focus:ring-gray-800">
-                  <img class="" src="https://tuk-cdn.s3.amazonaws.com/can-uploader/navigation-I-svg3.svg"
-                    alt="favourites">
-                  <img class="hidden" src="https://tuk-cdn.s3.amazonaws.com/can-uploader/navigation-I-svg3dark.svg"
-                    alt="favourites">
-                </button>
-                <button aria-label="go to cart"
-                  class="w-6 text-gray-800 focus:outline-none focus:ring-2 focus:ring-gray-800">
-                  <img class="" src="https://tuk-cdn.s3.amazonaws.com/can-uploader/navigation-I-svg4.svg" alt="bag">
-                  <img class="hidden" src="https://tuk-cdn.s3.amazonaws.com/can-uploader/navigation-I-svg4dark.svg"
-                    alt="bag">
-                </button>
-              </div>
-
-              <div class="flex lg:hidden">
-                <button aria-label="show options" onclick="mdOptionsToggle()"
-                  class="text-black hidden md:flex focus:outline-none focus:ring-2 rounded focus:ring-gray-600">
-                  <img class="" src="https://tuk-cdn.s3.amazonaws.com/can-uploader/navigation-I-svg5.svg"
-                    alt="toggler">
-                  <img class="hidden" src="https://tuk-cdn.s3.amazonaws.com/can-uploader/navigation-I-svg5dark.svg"
-                    alt="toggler">
-                </button>
-
-                <button aria-label="open menu" onclick="openMenu()"
-                  class="text-black md:hidden focus:outline-none focus:ring-2 rounded focus:ring-gray-600">
-                  <img class="" src="https://tuk-cdn.s3.amazonaws.com/can-uploader/navigation-I-svg5.svg"
-                    alt="toggler">
-                  <img class="hidden" src="https://tuk-cdn.s3.amazonaws.com/can-uploader/navigation-I-svg5dark.svg"
-                    alt="toggler">
-                </button>
-              </div>
-            </div>
-          </div>
-        </div>
-        <!-- For small screen -->
-        <div id="mobile-menu" class="hidden absolute z-10 inset-0 md:hidden bg-white flex flex-col h-screen w-full">
-          <div class="flex items-center justify-between border-b border-gray-200  pb-4 p-4">
-            <div class="flex items-center space-x-3">
+    <!-- Navigation start -->
+    <div class="">
+      <div>
+        <div class="relative">
+          <!-- For medium screens start -->
+          <div id="md-searchbar" class="bg-white  hidden lg:hidden py-5 px-6 items-center justify-between">
+            <div class="flex items-center space-x-3 text-black">
               <div>
                 <img class="" src="https://tuk-cdn.s3.amazonaws.com/can-uploader/navigation-I-svg2.svg" alt="search">
                 <img class="hidden" src="https://tuk-cdn.s3.amazonaws.com/can-uploader/navigation-I-svg2dark.svg"
                   alt="search">
               </div>
               <input type="text" placeholder="Søg efter"
-                class="text-sm text-gray-600 placeholder-gray-600  focus:outline-none" />
+                class="text-sm leading-none text-black focus:outline-none" />
             </div>
+            <div class="space-x-6">
+              <button aria-label="view favourites"
+                class="text-black  focus:outline-none focus:ring-2 focus:ring-black">
+                <img class="w-5" src="https://tuk-cdn.s3.amazonaws.com/can-uploader/navigation-I-svg3.svg"
+                  alt="favourites">
+                <img class="w-5 hidden" src="https://tuk-cdn.s3.amazonaws.com/can-uploader/navigation-I-svg3dark.svg"
+                  alt="favourites">
+              </button>
+              <button aria-label="go to cart" class="text-black  focus:outline-none focus:ring-2 focus:ring-black">
+                <img class="w-5" src="https://tuk-cdn.s3.amazonaws.com/can-uploader/navigation-I-svg4.svg" alt="bag">
+                <img class="w-5 hidden" src="https://tuk-cdn.s3.amazonaws.com/can-uploader/navigation-I-svg4dark.svg"
+                  alt="bag">
+              </button>
+            </div>
+          </div>
+          <!-- For medium screens end -->
 
-            <button onclick="closeMenu()" aria-label="close menu"
-              class="focus:outline-none focus:ring-2 rounded focus:ring-gray-600">
-              <img class="" src="https://tuk-cdn.s3.amazonaws.com/can-uploader/navigation-I-svg6.svg" alt="cross">
-              <img class="hidden" src="https://tuk-cdn.s3.amazonaws.com/can-uploader/navigation-I-svg6dark.svg"
-                alt="cross">
-            </button>
-          </div>
-          <div class="mt-6 p-4">
-            <ul class="flex flex-col font-medium space-y-6">
-              <li>
-                <a href="index.html"
-                  class="flex items-center justify-between hover:underline text-base text-gray-800 focus:outline-none focus:ring-2 focus:ring-gray-800">
-                  Forside
-                  <div>
-                    <img class="" src="https://tuk-cdn.s3.amazonaws.com/can-uploader/navigation-I-svg7.svg" alt="arrow">
-                    <img class="hidden" src="https://tuk-cdn.s3.amazonaws.com/can-uploader/navigation-I-svg7dark.svg"
-                      alt="arrow">
-                  </div>
+          <!-- For large screens start -->
+          <div class=" bg-gray-50 px-6 py-9">
+            <div class="container mx-auto flex items-center justify-between">
+              <h1 class="md:w-2/12 cursor-pointer text-black " aria-label="lunefuldlykke.dk">
+                <a href="index.html" class="font-extrabold">
+                  <img class="min-h-[50px]" src="content/lunefuld-lykke.svg" alt="logo">
                 </a>
-              </li>
-              <li>
-                <a href="plakater.html"
-                  class="flex items-center justify-between hover:underline text-base text-gray-800 focus:outline-none focus:ring-2 focus:ring-gray-800">
-                  Shop plakater
-                  <div>
-                    <img class="" src="https://tuk-cdn.s3.amazonaws.com/can-uploader/navigation-I-svg7.svg" alt="arrow">
-                    <img class="hidden" src="https://tuk-cdn.s3.amazonaws.com/can-uploader/navigation-I-svg7dark.svg"
-                      alt="arrow">
-                  </div>
-                </a>
-              </li>
-              <li>
-                <a href="plakater.html"
-                  class="flex items-center justify-between hover:underline text-base text-gray-800 focus:outline-none focus:ring-2 focus:ring-gray-800">
-                  Shop litteratur
-                  <div>
-                    <img class="" src="https://tuk-cdn.s3.amazonaws.com/can-uploader/navigation-I-svg7.svg" alt="arrow">
-                    <img class="hidden" src="https://tuk-cdn.s3.amazonaws.com/can-uploader/navigation-I-svg7dark.svg"
-                      alt="arrow">
-                  </div>
-                </a>
-              </li>
-              <li>
-                <a href="inspiration.html"
-                  class="flex items-center justify-between hover:underline text-base text-gray-800 focus:outline-none focus:ring-2 focus:ring-gray-800">
-                  Inspiration
-                  <div>
-                    <img class="" src="https://tuk-cdn.s3.amazonaws.com/can-uploader/navigation-I-svg7.svg" alt="arrow">
-                    <img class="hidden" src="https://tuk-cdn.s3.amazonaws.com/can-uploader/navigation-I-svg7dark.svg"
-                      alt="arrow">
-                  </div>
-                </a>
-              </li>
-              <li>
-                <a href="om.html"
-                  class="flex items-center justify-between hover:underline text-base text-gray-800 focus:outline-none focus:ring-2 focus:ring-gray-800">
-                  Om os
-                  <div>
-                    <img class="" src="https://tuk-cdn.s3.amazonaws.com/can-uploader/navigation-I-svg7.svg" alt="arrow">
-                    <img class="hidden" src="https://tuk-cdn.s3.amazonaws.com/can-uploader/navigation-I-svg7dark.svg"
-                      alt="arrow">
-                  </div>
-                </a>
-              </li>
-            </ul>
-          </div>
-          <div class="h-full flex items-end">
-            <ul class="flex flex-col font-medium space-y-8 bg-gray-50 w-full py-10 p-4 ">
-              <li>
-                <a href="javascript:void(0)"
-                  class=" text-gray-800 flex items-center space-x-2 focus:outline-none focus:ring-2 focus:ring-gray-800 hover:underline">
-                  <div>
-                    <img class="w-5" src="https://tuk-cdn.s3.amazonaws.com/can-uploader/navigation-I-svg4.svg"
-                      alt="bag">
-                    <img class="w-5 hidden"
-                      src="https://tuk-cdn.s3.amazonaws.com/can-uploader/navigation-I-svg4dark.svg" alt="bag">
-                  </div>
-                  <p class="pl-3 text-base">Kurv</p>
-                </a>
-              </li>
-              <li>
-                <a href="javascript:void(0)"
-                  class="text-gray-800 flex items-center space-x-2 focus:outline-none focus:ring-2 focus:ring-gray-800 hover:underline">
-                  <div>
-                    <img class="w-5" src="https://tuk-cdn.s3.amazonaws.com/can-uploader/navigation-I-svg3.svg"
+              </h1>
+              <ul class="hidden w-8/12 md:flex items-center font-medium justify-center space-x-8">
+                <li>
+                  <a href="plakater.html"
+                    class="text-base text-black focus:outline-none hover:border-b-black hover:border-b-2 pb-2">Shop plakater</a>
+                </li>
+                <li>
+                  <a href="litteratur.html"
+                    class="text-base text-black focus:outline-none hover:border-b-black hover:border-b-2 pb-2">Shop litteratur</a>
+                </li>
+                <li>
+                  <a href="inspiration.html"
+                    class="text-base text-black focus:outline-none hover:border-b-black hover:border-b-2 pb-2">Inspiration</a>
+                </li>
+              </ul>
+
+              <div class="md:w-2/12 justify-end flex items-center space-x-4 xl:space-x-8">
+                <div class="hidden lg:flex items-center">
+                  <button onclick="toggleSearch()" aria-label="search items"
+                    class="w-5 text-black focus:outline-none focus:ring-2 focus:ring-black">
+                    <img class="transform rotate-90"
+                      src="https://tuk-cdn.s3.amazonaws.com/can-uploader/navigation-I-svg2.svg" alt="search">
+                    <img class="transform rotate-90  hidden"
+                      src="https://tuk-cdn.s3.amazonaws.com/can-uploader/navigation-I-svg2dark.svg" alt="search">
+                  </button>
+                  <input id="searchInput" type="text" placeholder="Søg"
+                    class="hidden text-sm text-black rounded ml-1 border border-transparent focus:outline-none focus:border-black px-1" />
+                </div>
+                <div class="hidden lg:flex items-center space-x-4 xl:space-x-8">
+                  <button aria-label="view favourites"
+                    class="w-6 text-black focus:outline-none focus:ring-2 focus:ring-black">
+                    <img class="" src="https://tuk-cdn.s3.amazonaws.com/can-uploader/navigation-I-svg3.svg"
                       alt="favourites">
-                    <img class="w-5 hidden"
-                      src="https://tuk-cdn.s3.amazonaws.com/can-uploader/navigation-I-svg3dark.svg" alt="favourites">
-                  </div>
-                  <p class="pl-3 text-base">Ønskeliste</p>
-                </a>
-              </li>
-            </ul>
+                    <img class="hidden" src="https://tuk-cdn.s3.amazonaws.com/can-uploader/navigation-I-svg3dark.svg"
+                      alt="favourites">
+                  </button>
+                  <button aria-label="go to cart"
+                    class="w-6 text-gray-800 focus:outline-none focus:ring-2 focus:ring-gray-800">
+                    <img class="" src="https://tuk-cdn.s3.amazonaws.com/can-uploader/navigation-I-svg4.svg" alt="bag">
+                    <img class="hidden" src="https://tuk-cdn.s3.amazonaws.com/can-uploader/navigation-I-svg4dark.svg"
+                      alt="bag">
+                  </button>
+                </div>
+
+                <div class="flex lg:hidden">
+                  <button aria-label="show options" onclick="mdOptionsToggle()"
+                    class="text-black hidden md:flex focus:outline-none focus:ring-2 rounded focus:ring-black">
+                    <img class="" src="https://tuk-cdn.s3.amazonaws.com/can-uploader/navigation-I-svg5.svg"
+                      alt="toggler">
+                    <img class="hidden" src="https://tuk-cdn.s3.amazonaws.com/can-uploader/navigation-I-svg5dark.svg"
+                      alt="toggler">
+                  </button>
+
+                  <button aria-label="open menu" onclick="openMenu()"
+                    class="text-black md:hidden focus:outline-none focus:ring-2 rounded focus:ring-black">
+                    <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" aria-hidden="true" role="img" class="iconify iconify--ooui" width="27" height="auto" preserveAspectRatio="xMidYMid meet" viewBox="0 0 20 20"><path fill="#00000" d="M1 3v2h18V3zm0 8h18V9H1zm0 6h18v-2H1z"></path></svg>                  </button>
+                </div>
+              </div>
+            </div>
           </div>
+          <!-- For large screens end -->
+
+          <!-- For small screens start -->
+          <div id="mobile-menu" class="hidden absolute z-10 inset-0 md:hidden bg-white flex flex-col h-screen w-full">
+            <div class="flex items-center justify-between border-b border-gray-200  pb-4 p-4">
+              <div class="flex items-center space-x-3">
+                <div>
+                  <img class="" src="https://tuk-cdn.s3.amazonaws.com/can-uploader/navigation-I-svg2.svg" alt="search">
+                  <img class="hidden" src="https://tuk-cdn.s3.amazonaws.com/can-uploader/navigation-I-svg2dark.svg"
+                    alt="search">
+                </div>
+                <input type="text" placeholder="Søg efter"
+                  class="text-sm text-black placeholder-black  focus:outline-none" />
+              </div>
+
+              <button onclick="closeMenu()" aria-label="close menu"
+                class="focus:outline-none focus:ring-2 rounded focus:ring-gray-600">
+                <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" aria-hidden="true" role="img" class="iconify iconify--ic" width="25" height="auto" preserveAspectRatio="xMidYMid meet" viewBox="0 0 24 24"><path fill="#00000" d="M19 6.41L17.59 5L12 10.59L6.41 5L5 6.41L10.59 12L5 17.59L6.41 19L12 13.41L17.59 19L19 17.59L13.41 12z"></path></svg>
+                <svg class="hidden" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" aria-hidden="true" role="img" class="iconify iconify--ic" width="25" height="auto" preserveAspectRatio="xMidYMid meet" viewBox="0 0 24 24"><path fill="#00000" d="M19 6.41L17.59 5L12 10.59L6.41 5L5 6.41L10.59 12L5 17.59L6.41 19L12 13.41L17.59 19L19 17.59L13.41 12z"></path></svg>
+              </button>
+            </div>
+            <div class="mt-6 p-4">
+              <ul class="flex flex-col font-medium space-y-6">
+                <li>
+                  <a href="index.html"
+                    class="flex items-center justify-between text-base text-black focus:outline-none">
+                    <p class="hover:border-b-black border-white border-b-2 pb-1">Forside</p>
+                    <div>
+                      <svg class="" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" aria-hidden="true" role="img" class="iconify iconify--ic" width="25" height="auto" preserveAspectRatio="xMidYMid meet" viewBox="0 0 24 24"><path fill="#fffff" d="M8.59 16.59L13.17 12L8.59 7.41L10 6l6 6l-6 6l-1.41-1.41z"></path></svg>
+                      <svg class="hidden" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" aria-hidden="true" role="img" class="iconify iconify--ic" width="25" height="auto" preserveAspectRatio="xMidYMid meet" viewBox="0 0 24 24"><path fill="#fffff" d="M8.59 16.59L13.17 12L8.59 7.41L10 6l6 6l-6 6l-1.41-1.41z"></path></svg>
+                    </div>
+                  </a>
+                </li>
+                <li>
+                  <a href="plakater.html"
+                  class="flex items-center justify-between text-base text-black focus:outline-none">
+                  <p class="hover:border-b-black border-white border-b-2 pb-1">Shop plakater</p>
+                  <div>
+                    <svg class="" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" aria-hidden="true" role="img" class="iconify iconify--ic" width="25" height="auto" preserveAspectRatio="xMidYMid meet" viewBox="0 0 24 24"><path fill="#fffff" d="M8.59 16.59L13.17 12L8.59 7.41L10 6l6 6l-6 6l-1.41-1.41z"></path></svg>
+                    <svg class="hidden" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" aria-hidden="true" role="img" class="iconify iconify--ic" width="25" height="auto" preserveAspectRatio="xMidYMid meet" viewBox="0 0 24 24"><path fill="#fffff" d="M8.59 16.59L13.17 12L8.59 7.41L10 6l6 6l-6 6l-1.41-1.41z"></path></svg>
+                  </div>
+                  </a>
+                </li>
+                <li>
+                  <a href="plakater.html"
+                  class="flex items-center justify-between text-base text-black focus:outline-none">
+                  <p class="hover:border-b-black border-white border-b-2 pb-1">Shop litteratur</p>
+                  <div>
+                    <svg class="" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" aria-hidden="true" role="img" class="iconify iconify--ic" width="25" height="auto" preserveAspectRatio="xMidYMid meet" viewBox="0 0 24 24"><path fill="#fffff" d="M8.59 16.59L13.17 12L8.59 7.41L10 6l6 6l-6 6l-1.41-1.41z"></path></svg>
+                    <svg class="hidden" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" aria-hidden="true" role="img" class="iconify iconify--ic" width="25" height="auto" preserveAspectRatio="xMidYMid meet" viewBox="0 0 24 24"><path fill="#fffff" d="M8.59 16.59L13.17 12L8.59 7.41L10 6l6 6l-6 6l-1.41-1.41z"></path></svg>
+                  </div>
+                  </a>
+                </li>
+                <li>
+                  <a href="inspiration.html"
+                  class="flex items-center justify-between text-base text-black focus:outline-none">
+                  <p class="hover:border-b-black border-white border-b-2 pb-1">Inspiration</p>
+                  <div>
+                    <svg class="" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" aria-hidden="true" role="img" class="iconify iconify--ic" width="25" height="auto" preserveAspectRatio="xMidYMid meet" viewBox="0 0 24 24"><path fill="#fffff" d="M8.59 16.59L13.17 12L8.59 7.41L10 6l6 6l-6 6l-1.41-1.41z"></path></svg>
+                    <svg class="hidden" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" aria-hidden="true" role="img" class="iconify iconify--ic" width="25" height="auto" preserveAspectRatio="xMidYMid meet" viewBox="0 0 24 24"><path fill="#fffff" d="M8.59 16.59L13.17 12L8.59 7.41L10 6l6 6l-6 6l-1.41-1.41z"></path></svg>
+                  </div>
+                  </a>
+                </li>
+              </ul>
+            </div>
+            <div class="h-full flex items-end">
+              <ul class="flex flex-col font-medium space-y-8 bg-gray-50 w-full py-10 p-4 ">
+                <li>
+                  <a href="javascript:void(0)"
+                    class=" text-black flex items-center space-x-2 focus:outline-none focus:ring-2 focus:ring-black">
+                    <div class="pr-3">
+                      <img class="w-5" src="https://tuk-cdn.s3.amazonaws.com/can-uploader/navigation-I-svg4.svg"
+                        alt="bag">
+                      <img class="w-5 hidden"
+                        src="https://tuk-cdn.s3.amazonaws.com/can-uploader/navigation-I-svg4dark.svg" alt="bag">
+                    </div>
+                    <p class="text-base hover:border-b-black border-gray-50 w-fit border-b-2 pb-1">Kurv</p>
+                  </a>
+                </li>
+                <li>
+                  <a href="javascript:void(0)"
+                    class="text-black flex items-center space-x-2 focus:outline-none focus:ring-2 focus:ring-black">
+                    <div class="pr-3">
+                      <img class="w-5" src="https://tuk-cdn.s3.amazonaws.com/can-uploader/navigation-I-svg3.svg"
+                        alt="favourites">
+                      <img class="w-5 hidden"
+                        src="https://tuk-cdn.s3.amazonaws.com/can-uploader/navigation-I-svg3dark.svg" alt="favourites">
+                    </div>
+                    <p class="text-base hover:border-b-black border-gray-50 w-fit border-b-2 pb-1">Ønskeliste</p>
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <!-- For small screens end -->
         </div>
       </div>
     </div>
-  </div>
-  <!-- Navigation slut -->
+    <!-- Navigation end -->
 
     <!-- Content -->
     <div class="2xl:container 2xl:mx-auto lg:py-16 lg:px-20 md:py-12 md:px-6 py-9 px-4">
