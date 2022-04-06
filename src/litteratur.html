@@ -252,16 +252,7 @@
                 </p>
             </div>
 
-                <!-- FILTRERING -->
-                <!--
-                This component uses @tailwindcss/forms
-
-                yarn add @tailwindcss/forms
-                npm install @tailwindcss/forms
-
-                plugins: [require('@tailwindcss/forms')]
-                -->
-
+                <!-- Filter start -->
                 <form
                 class="max-w-3xl mx-auto overscroll-x-none mt-8 divide-y "
                 role="dialog"
@@ -273,40 +264,41 @@
                                 <fieldset>
                                         <ul class="flex items-center justify-between">
                                             <li>
-                                              <label class="flex px-2.5 lg:px-7 py-2 lg:py-2.5 items-center text-sm hover:cursor-pointer bg-black text-white">
-                                                <span class="font-medium">Fotokundskab</span>
-                                                </label>
-                                            </li>
-
-                                            <li>
-                                              <label class="flex px-2.5 lg:px-7 py-2 lg:py-2.5 items-center text-sm hover:cursor-pointer bg-black text-white">
-                                                  <span class="font-medium">Rejser</span>
-                                              </label>
-                                            </li>
-
-                                            <li>
-                                              <label class="flex px-2.5 lg:px-7 py-2 lg:py-2.5 items-center text-sm hover:cursor-pointer bg-black text-white">
-                                                <span class="font-medium">Selvhjælp</span>
-                                              </label>
-                                            </li>
-
-                                            <li>
-                                              <label class="flex px-2.5 lg:px-7 py-2 lg:py-2.5 items-center text-sm hover:cursor-pointer bg-black text-white">
+                                              <div class="flex px-2.5 lg:px-7 py-2 lg:py-2.5 items-center text-sm hover:cursor-pointer bg-black text-white hover:bg-white hover:text-black border-black border-2">
                                                 <span class="font-medium">Nyheder</span>
-                                              </label>
+                                              </div>
+                                            </li>
+                                          
+                                            <li>
+                                              <div class="flex px-2.5 lg:px-7 py-2 lg:py-2.5 items-center text-sm hover:cursor-pointer bg-black text-white hover:bg-white hover:text-black border-black border-2">
+                                                <span class="font-medium">Fotokundskab</span>
+                                                </div>
                                             </li>
 
                                             <li>
-                                              <label class="flex px-2.5 lg:px-7 py-2 lg:py-2.5 items-center text-sm hover:cursor-pointer bg-black text-white">
+                                              <div class="flex px-2.5 lg:px-7 py-2 lg:py-2.5 items-center text-sm hover:cursor-pointer bg-black text-white hover:bg-white hover:text-black border-black border-2">
+                                                  <span class="font-medium">Rejser</span>
+                                              </div>
+                                            </li>
+
+                                            <li>
+                                              <div class="flex px-2.5 lg:px-7 py-2 lg:py-2.5 items-center text-sm hover:cursor-pointer bg-black text-white hover:bg-white hover:text-black border-black border-2">
+                                                <span class="font-medium">Selvhjælp</span>
+                                              </div>
+                                            </li>
+
+                                            <li>
+                                              <div class="flex px-2.5 lg:px-7 py-2 lg:py-2.5 items-center text-sm hover:cursor-pointer bg-black text-white hover:bg-white hover:text-black border-black border-2">
                                                 <span class="font-medium">Bestsellers</span>
-                                              </label>
+                                              </div>
                                             </li>
                                         </ul>
                                 </fieldset>
                             </div>
                         </div>
                     </main>
-                </form>   
+                </form>
+                <!-- Filter end -->
         
 
             <!-- BOOKS -->
