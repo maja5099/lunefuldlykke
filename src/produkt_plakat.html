@@ -326,7 +326,7 @@
                                 </svg>
                             </div>
                             <p class="sr-only">4 out of 5 stars</p>
-                            <a href="#" class="ml-3 text-sm font-medium text-indigo-600 hover:text-indigo-500">2
+                            <a href="#" class="ml-3 text-sm font-medium text-black hover:text-black">2
                                 anmeldelser</a>
                         </div>
                     </div>
@@ -334,10 +334,10 @@
                     <form class="mt-10">
                         <!-- Colors -->
                         <div>
-                            <h3 class="text-sm text-gray-900 font-medium">Passepartout-farve</h3>
+                            <h3 class="text-sm text-gray-900 font-medium">Vælg passepartout-farve:</h3>
 
                             <fieldset class="mt-4">
-                                <legend class="sr-only">Vælg farve</legend>
+                                <legend class="sr-only">Vælg farve:</legend>
                                 <div class="flex items-center space-x-3">
                                     <!--
                         Active and Checked: "ring ring-offset-1"
@@ -384,7 +384,7 @@
                         <!-- Sizes -->
                         <div class="mt-10">
                             <div class="flex items-center justify-between">
-                                <h3 class="text-sm text-gray-900 font-medium">Størrelse</h3>
+                                <h3 class="text-sm text-gray-900 font-medium">Vælg størrelse:</h3>
                             </div>
 
                             <fieldset class="mt-4">
@@ -409,7 +409,7 @@
 
                                     <!-- Active: "ring-2 ring-indigo-500" -->
                                     <label
-                                        class="group relative border  py-3 px-4 flex items-center justify-center text-sm text-center font-medium uppercase hover:bg-gray-50 focus:outline-none sm:flex-1 sm:py-6 bg-white shadow-sm text-gray-900 cursor-pointer ring-2 ring-indigo-500">
+                                        class="group relative border  py-3 px-4 flex items-center justify-center text-sm text-center font-medium uppercase hover:bg-gray-50 focus:outline-none sm:flex-1 sm:py-6 bg-white shadow-sm text-gray-900 cursor-pointer ring-2 ring-black">
                                         <input type="radio" name="size-choice" value="70x100" class="sr-only"
                                             aria-labelledby="size-choice-1-label">
                                         <p id="size-choice-1-label">70<br> x <br>100</p>
@@ -455,9 +455,14 @@
                             </fieldset>
                         </div>
 
-                        <button type="submit"
-                            class="mt-10 w-full bg-indigo-600 border border-transparent py-3 px-8 flex items-center justify-center text-base font-medium text-white hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500">Læg
-                            i kurv</button>
+                        <a class="relative mt-10 w-full flex items-center justify-center py-2.5 overflow-hidden border-2 border-black group focus:outline-none focus:ring" href="litteratur.html">
+                          <div class="inline-flex justify-center items-center">
+                            <span class="absolute inset-y-0 left-0 w-[2px] transition-all bg-black group-hover:w-full group-active:bg-black"></span>
+                            <span class="relative text-base font-medium text-black transition-colors group-hover:text-white">
+                              Læg i kurv
+                            </span>
+                          </div>
+                        </a>
                     </form>
                 </div>
 
