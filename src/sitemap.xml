@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+
+    <!-- Index -->
+    <url>
+      <loc>https://maja-birch-sorensen-lunefuld-lykke.netlify.app/index.html</loc>
+    </url>
+
+    <!-- Plakater -->
+    <url>
+      <loc>https://maja-birch-sorensen-lunefuld-lykke.netlify.app/plakater.html</loc>
+    </url>
+
+    <!-- Produkt plakat -->
+    <url>
+      <loc>https://maja-birch-sorensen-lunefuld-lykke.netlify.app/produkt_plakat.html</loc>
+    </url>
+
+    <!-- Litteratur -->
+    <url>
+      <loc>https://maja-birch-sorensen-lunefuld-lykke.netlify.app/litteratur.html</loc>
+    </url>
+
+    <!-- Produkt bog -->
+    <url>
+      <loc>https://maja-birch-sorensen-lunefuld-lykke.netlify.app/produkt_bog.html</loc>
+    </url>
+
+    <!-- Inspiration -->
+    <url>
+      <loc>https://maja-birch-sorensen-lunefuld-lykke.netlify.app/inspiration.html</loc>
+    </url>
+
+    <!-- Post -->
+    <url>
+      <loc>https://maja-birch-sorensen-lunefuld-lykke.netlify.app/post.html</loc>
+    </url>
+
+    <!-- How to post -->
+    <url>
+      <loc>https://maja-birch-sorensen-lunefuld-lykke.netlify.app/how_to_post.html</loc>
+    </url>
+
+    <!-- Om os -->
+    <url>
+      <loc>https://maja-birch-sorensen-lunefuld-lykke.netlify.app/om.html</loc>
+    </url>
+
+    <!-- Landingpage 1 -->
+    <url>
+      <loc>https://maja-birch-sorensen-lunefuld-lykke.netlify.app/landingpage_1.html</loc>
+    </url>
+
+    <!-- Landingpage 2 -->
+    <url>
+      <loc>https://maja-birch-sorensen-lunefuld-lykke.netlify.app/landingpage_2.html</loc>
+    </url>
+
+</urlset>
